@@ -3,6 +3,8 @@ name: Push to Container Registry
 on:
   push:
     branches: ["main"]
+    tags:
+      - v*
   release:
     types: [published]
 
